@@ -4,37 +4,31 @@
     <meta charset="UTF-8">
     <title>h9pe</title>
     <style>
-        body, html {
+        /* Убираем все лимиты и отступы */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
             height: 100%;
-            overflow: hidden;
+            overflow: hidden; /* Чтобы не было полос прокрутки */
             background-color: #000;
         }
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100vw;
-        }
         iframe {
+            width: 100vw;
+            height: 100vh;
             border: none;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            border-radius: 12px;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <iframe 
-            src="https://dnbmedia.muz.lc/h9pe" 
-            width="100%" 
-            max-width="500px"
-            height="520" 
-            allowtransparency="true" 
-            allow="encrypted-media">
-        </iframe>
-    </div>
+    <iframe 
+        src="https://dnbmedia.muz.lc/h9pe" 
+        allow="encrypted-media" 
+        allowtransparency="true">
+    </iframe>
 </body>
 </html>
